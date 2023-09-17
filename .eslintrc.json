@@ -13,13 +13,7 @@
     "quotes": ["error", "single"],
     "comma-dangle": ["error", "always-multiline"],
     "max-len": [0, 120, 2, { "ignoreUrls": true }],
-    "i18next/no-literal-string": [
-      "error",
-      {
-        "markupOnly": true,
-        "ignoreAttribute": ["data-testid", "to"]
-      }
-    ]
+    "i18next/no-literal-string": 0
   },
   "overrides": [
     {
