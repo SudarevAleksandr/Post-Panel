@@ -21,6 +21,10 @@
       "rules": {
         "i18next/no-literal-string": "off"
       }
+    },
+    {
+      "extends": ["plugin:@typescript-eslint"],
+      "files": ["./json-server/*.{js}"]
     }
   ]
 }
