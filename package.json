@@ -52,8 +52,10 @@
     "eslint-plugin-prettier": "4.2.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
+    "husky": "^8.0.3",
     "identity-obj-proxy": "3.0.0",
     "jest": "27.5.1",
+    "json-server": "^0.17.4",
     "mini-css-extract-plugin": "^2.7.6",
     "prettier": "2.8.8",
     "regenerator-runtime": "0.13.9",
@@ -72,12 +74,14 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "1.8.0",
     "i18next": "^23.4.5",
     "i18next-browser-languagedetector": "^7.1.0",
     "i18next-http-backend": "^2.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-i18next": "^13.2.0",
+    "react-redux": "7.2.6",
     "react-router-dom": "^6.15.0"
   }
 }

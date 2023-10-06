@@ -21,6 +21,21 @@
       "rules": {
         "i18next/no-literal-string": "off"
       }
+    },
+    {
+      "files": ["./json-server/*.js"],
+      "parserOptions": {
+        "project": "./tsconfig.json", 
+        "createDefaultProgram": true
+      },
+      "rules": {
+        "@typescript-eslint/no-unused-vars": "off" // Отключить правило, связанное с TypeScript
+      }
     }
+    //{
+    ////"plugins": ["@typescript-eslint"],
+    //"extends": ["plugin:@typescript-eslint/tsconfig"],
+    //"files": ["./json-server/*.{js}"]
+    //}
   ]
 }
