@@ -5,8 +5,11 @@
   "Язык": "English",
   "Главная": "Main",
   "О сайте": "About",
+  "Форма авторизации": "Authorization form",
   "Войти": "Login",
   "новый перевод": "новый перевод",
+  "Введите username": "Enter username",
+  "Введите пароль": "Enter password",
   "Страница не найдена": "Page not found",
   "Короткий язык": "Eng"
 }
