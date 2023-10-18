@@ -15,6 +15,10 @@
     "max-len": [0, 120, 2, { "ignoreUrls": true }],
     "i18next/no-literal-string": 0
   },
+  "globals": {
+    "__IS_DEV__": true,
+    "__API__": true
+  },
   "overrides": [
     {
       "files": ["**/src/**/*.test.{ts,tsx}"],
@@ -25,7 +29,7 @@
     {
       "files": ["./json-server/*.js"],
       "parserOptions": {
-        "project": "./tsconfig.json", 
+        "project": "./tsconfig.json",
         "createDefaultProgram": true
       },
       "rules": {
