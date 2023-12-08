@@ -18,14 +18,16 @@ export default ({ config }: { config: webpack.Configuration }) => {
     return rule;
   });
 
-  config.module?.rules?.push({
+  config!.module?.rules?.push({
     test: /\.svg$/,
     use: ['@svgr/webpack'],
   });
 
-  config.plugins.push(
+  config!.plugins!.push(
     new DefinePlugin({
-      __IS_DEV__: true,
+      __IS_DEV__: JSON.stringify(true),
+      __API__: JSON.stringify(''),
+      __PROJECT__: JSON.stringify('storybook'),
     }),
   );
 
