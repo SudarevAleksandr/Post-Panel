@@ -18,7 +18,7 @@ export default ({ config }: { config: webpack.Configuration }) => {
     return rule;
   });
 
-  config.module?.rules?.push({
+  config!.module?.rules?.push({
     test: /\.svg$/,
     use: ['@svgr/webpack'],
   });
@@ -27,6 +27,7 @@ export default ({ config }: { config: webpack.Configuration }) => {
     new DefinePlugin({
       __IS_DEV__: JSON.stringify(true),
       __API__: JSON.stringify(''),
+      __PROJECT__: JSON.stringify('storybook'),
     }),
   );
 
