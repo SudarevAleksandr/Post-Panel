@@ -27,6 +27,7 @@ export default {
     '\\.s?css$': 'identity-obj-proxy',
     '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
   },
+  testPathIgnorePatterns: ['.fttemplates'],
   // Indicates whether the coverage information should be collected while executing the test
   // collectCoverage: false,
 
